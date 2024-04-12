@@ -1,0 +1,176 @@
+*{
+    box-sizing: 0;
+    padding: 0;
+
+    
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+      .hubballi-regular {
+        font-family: "Hubballi", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .handlee-regular {
+        font-family: "Handlee", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+            
+    
+}
+
+
+/* menu */
+
+.nav-link {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover{
+    color:crimson;
+}
+/* Logo */
+
+.navbar-brand img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Imagen general */
+.presentacion img{
+    width: 100%;
+    height: auto;
+}
+
+/* texto que va dentro de la imagen */
+.presentacion h1{
+   position:absolute ;
+   top: 350px;
+   margin-left: 400px;;
+   font-size: 100px;
+   color:black;
+
+}
+
+/* itutlo detras de  */
+.tit-pres h3{
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* box de mi presentacion */
+.present-foto{
+    display:flex;
+    margin: auto;
+    width: 60%;
+    
+}
+
+
+
+.present-foto img{
+    width: 300px;
+    height: auto;
+    border: solid 3px black
+}
+
+.pres-texto{
+    display: inline;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top:20px;
+}
+
+
+/* pie de página */
+footer {
+      width: 100%;
+      height: 150px;
+      background-image:url(./img/img-pie.jpg);
+
+      margin-top: 120px;
+}
+
+/* texto footer */
+
+footer h2{
+    font-size: 50px;
+    font-weight:1000;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 100px;
+}
+
+/* logos de redes y correo */
+
+.logos img{
+    display: block;
+    height: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 1200px;
+}
+
+/* what */
+
+.what{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.what img{
+    width: 100px;
+    height: auto;
+}
+
+/* Diseño Web */
+
+/* Titulo */
+
+.tit-proceso{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.proceso{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    border: solid 2px black;
+    margin:30px;
+    
+}
+
+.proceso h3{
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+   
+}
+
+.proceso p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+   
+    
+}
+
+
