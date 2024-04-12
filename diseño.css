@@ -30,6 +30,7 @@
     font-weight: 500;
 }
 
+/* al pasar el cursor */
 .navbar-nav .nav-link:hover{
     color:crimson;
 }
@@ -147,6 +148,7 @@ footer h2{
     font-weight: 400;
 }
 
+/* contenedor de los procesos */
 .proceso{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -156,7 +158,7 @@ footer h2{
     margin:30px;
     
 }
-
+/* titulo de proceso */
 .proceso h3{
     font-size: 30px;
     color: white;
@@ -164,13 +166,149 @@ footer h2{
     text-align: center;
    
 }
-
+/* explicación de procesos */
 .proceso p{
     font-size: 20px;
     color: black;
     text-align: center;
    
     
+}
+
+.titulo-proyectos{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+}
+
+/* contenedor de las img-proy */
+
+.con-proyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+/* img de los proyectos */
+.con-proyectos img{
+    width: 400px;
+    height: 250px;
+    border:solid 1px black;
+}
+
+/* tit- proyectos */
+.con-proyectos h3{
+    font-size: 25px;
+    Color: black;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Contacto */
+
+/* titulo de contacto */
+
+.present-contacto{
+    display: inline-block
+
+}
+
+.tit-contacto{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-left: 370px;
+    margin-right: 370px;
+    margin-top:-230px;
+    
+    
+
+}
+.present-contacto .globo img{
+    width: 700px;
+    height: 350px;
+    margin-top: -340px;
+    margin-left: 320px;
+}
+
+.present-contacto img{
+    width: 150px;
+    height: 150px;
+    border-radius: 60px;
+    margin-left: 200px;
+    margin-top:100px;
+}
+
+/* contenedor de instagram y contacto */
+.cont-form-mapa{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    padding-bottom: 80px;;
+
+
+}
+/* mapa */
+
+.cont-form-mapa iframe{
+    border:solid black 2px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+}
+
+/* label */
+.formulario{
+    font-size: 25px;
+    color:crimson;
+    font-weight: 400;
+    display: block;
+    padding-top: 40px;
+    margin-left: 50px;
+    
+   
+}
+
+/* consulta */
+.consulta{
+    display: block;
+    padding-top: 30px;
+    margin-left: 50px;
+    width: 6oopx;
+    height: 100px;
+}
+/* imput */
+.formulario2{
+    display: block;
+    padding-top: 30px;
+    margin-left: 50px;
+}
+/* contendor del formulario */
+#contact-form{
+    margin-left: 30px;
+    border: solid black 2px;
+    width: 40%;
+    height: 600px;
+}
+
+/* boton de enviar */
+.enviar{
+    display: block;
+    margin: 50px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+    background-color: crimson;
+    border-radius: 30px;
 }
 
 
