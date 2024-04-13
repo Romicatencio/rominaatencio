@@ -50,10 +50,11 @@
 /* texto que va dentro de la imagen */
 .presentacion h1{
    position:absolute ;
-   top: 350px;
+   top: 200px;
    margin-left: 400px;;
-   font-size: 100px;
-   color:black;
+   font-size: 130px;
+   color:white;
+   font-weight: 800;
 
 }
 
@@ -96,7 +97,7 @@
 footer {
       width: 100%;
       height: 150px;
-      background-image:url(./img/img-pie.jpg);
+      background-image:url(./img/presentacion-pie.jpg);
 
       margin-top: 120px;
 }
@@ -140,18 +141,33 @@ footer h2{
 
 /* Titulo */
 
+/* titulo general del proceso */
+.titulo-general{
+    font-size: 35px;
+     text-align: center;
+     display: inline-block;
+     background-color: black;
+     color: white;
+     margin-left: 500px;
+     padding: 10px;
+}
+
+
+
 .tit-proceso{
-    font-size: 40px;
+    font-size: 25px;
     color: black;
     text-align: center;
     padding: 20px;
     font-weight: 400;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 /* contenedor de los procesos */
 .proceso{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr  ;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
     border: solid 2px black;
@@ -175,6 +191,26 @@ footer h2{
     
 }
 
+/* explicacion entrega final */
+.entrega{
+    border: solid 2px black;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -30px;
+}
+.entrega h3{
+    
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+   
+}
+.entrega p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
 .titulo-proyectos{
     font-size: 40px;
     color: black;
