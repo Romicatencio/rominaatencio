@@ -1,6 +1,7 @@
 *{
-    box-sizing: 0;
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
 
     
         font-family: "Shadows Into Light", cursive;
@@ -21,7 +22,7 @@
     
 }
 
-
+@media screen and (min-width:769px){
 /* menu */
 
 .nav-link {
@@ -58,7 +59,7 @@
 
 }
 
-/* itutlo detras de  */
+/* titulo detras de  */
 .tit-pres h3{
     font-size: 30px;
     margin-top: 30px;
@@ -168,7 +169,7 @@ footer h2{
 .proceso{
     display: grid;
     grid-template-columns: 1fr 1fr  ;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
     gap: 5px;
     border: solid 2px black;
     margin:30px;
@@ -177,9 +178,10 @@ footer h2{
 /* titulo de proceso */
 .proceso h3{
     font-size: 30px;
-    color: white;
-    background-color: black;
+    color:black;
+    background-color:rgb(240, 155, 172);
     text-align: center;
+    padding: 10px;
    
 }
 /* explicación de procesos */
@@ -201,10 +203,10 @@ footer h2{
 .entrega h3{
     
     font-size: 30px;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color:rgb(240, 155, 172);
     text-align: center;
-   
+   padding: 10px;
 }
 .entrega p{
     font-size: 20px;
@@ -348,3 +350,518 @@ footer h2{
 }
 
 
+/* cookies */
+.aviso-cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: auto;
+    background-color: #f4f4f4;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    display: none; /* Oculto inicialmente */
+    margin-left: 450px;;
+}
+
+.aviso-cookies .galleta {
+    width: 80px;
+}
+
+.aviso-cookies .titulo {
+    margin: 10px 0;
+    color: #333;
+}
+
+.aviso-cookies .parrafo {
+    color: #000;
+    font-size: 20px;
+}
+
+.aviso-cookies .boton {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.aviso-cookies .boton:hover {
+    background-color:darkgray;
+}
+
+.aviso-cookies .enlace {
+    display: block;
+    margin-top: 10px;
+    color:crimson;
+    text-decoration: none;
+}
+
+.aviso-cookies .enlace2{
+    text-decoration: none;
+    color:crimson;
+}
+
+.aviso-cookies .enlace:hover {
+    text-decoration: underline;
+}
+
+/* politica de privacidad */
+
+.tit-politica{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+}
+
+.texto-politica{
+    font-size: 20px;
+    margin: 10px;
+    color:#000;
+}
+
+/* texto de cookies */
+
+/* enlace para regresar a index */
+
+.regresar{
+    font-size: 20px;
+    color: white;
+    border-radius: 40px;
+    background-color: #000;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.tit-cookies{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+}
+
+.tit2-cookies{
+    font-size: 25px;
+    color:#000;}
+
+.texto-cookies{
+    font-size: 20px;
+    color:#000;
+}}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+    
+
+/* menu */
+.nav-link{
+    color: black;
+    font-size: 20px;
+}
+
+/* al pasar el cursor */
+.navbar-nav .nav-link:hover{
+    color:crimson;
+}
+
+/* Logo */
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+/* texto que va dentro de la imagen */
+.presentacion h1{
+   position:absolute ;
+   top: 100px;
+   margin-left: 150px;;
+   font-size: 50px;
+   color:white;
+   font-weight: 800;
+
+}
+/* titulo detras de  */
+.tit-pres h3{
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* box de mi presentacion */
+.present-foto{
+    display:flex;
+    margin: auto;
+    width: 80%;
+    
+}
+
+
+
+.present-foto img{
+    width: 200px;
+    height: auto;
+    border: solid 3px black
+}
+
+.pres-texto{
+    display: inline;
+    font-size: 15px;
+   
+    margin-left: 10px;
+    margin-top:-50px;
+}
+
+
+/* pie de página */
+footer {
+      width: 100%;
+      height: 100px;
+      background-image:url(./img/presentacion-pie.jpg);
+
+      margin-top: 120px;
+}
+
+/* texto footer */
+
+footer h2{
+    font-size: 30px;
+    font-weight:1000;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 100px;
+}
+/* what */
+
+.what{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.what img{
+    width: 60px;
+    height: auto;
+}
+
+/* cookies */
+.aviso-cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+    background-color: #f4f4f4;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    display: none; /* Oculto inicialmente */
+    margin-left: 120px;;
+    
+}
+
+.aviso-cookies .galleta {
+    width: 50px;
+}
+
+.aviso-cookies .titulo {
+    margin: 10px 0;
+    color: #333;
+}
+
+.aviso-cookies .parrafo {
+    color: #000;
+    font-size: 13px;
+}
+
+.aviso-cookies .boton {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.aviso-cookies .boton:hover {
+    background-color:darkgray;
+}
+
+.aviso-cookies .enlace {
+    display: block;
+    margin-top: 10px;
+    color:crimson;
+    text-decoration: none;
+}
+
+.aviso-cookies .enlace2{
+    text-decoration: none;
+    color:crimson;
+}
+
+.aviso-cookies .enlace:hover {
+    text-decoration: underline;
+}
+
+/* politica de privacidad */
+
+.tit-politica{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+}
+
+.texto-politica{
+    font-size: 20px;
+    margin: 10px;
+    color:#000;
+}
+
+/* texto de cookies */
+
+/* enlace para regresar a index */
+
+.regresar{
+    font-size: 20px;
+    color: white;
+    border-radius: 40px;
+    background-color: #000;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.tit-cookies{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+}
+
+.tit2-cookies{
+    font-size: 25px;
+    color:#000;}
+
+.texto-cookies{
+    font-size: 20px;
+    color:#000;
+}
+
+/* Diseño Web */
+
+/* Titulo */
+
+/* titulo general del proceso */
+.titulo-general{
+    font-size: 25px;
+     text-align: center;
+     display: inline-block;
+     background-color: black;
+     color: white;
+     margin-left: 120px;
+     padding: 10px;
+}
+
+
+
+.tit-proceso{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* contenedor de los procesos */
+.proceso{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    border: solid 2px black;
+    margin:30px;
+    
+}
+/* titulo de proceso */
+.proceso h3{
+    font-size: 20px;
+    color:black;
+    background-color:rgb(240, 155, 172);
+    text-align: center;
+    padding: 10px;
+   
+}
+/* explicación de procesos */
+.proceso p{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+   
+    
+}
+
+/* explicacion entrega final */
+.entrega{
+    border: solid 2px black;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -30px;
+}
+.entrega h3{
+    
+    font-size: 20px;
+    color:black;
+    background-color:rgb(240, 155, 172);
+    text-align: center;
+    padding: 10px;
+}
+.entrega p{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+.titulo-proyectos{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+}
+
+/* contenedor de las img-proy */
+
+.con-proyectos{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-left: 80px;
+}
+/* img de los proyectos */
+.con-proyectos img{
+    width: 330px;
+    height: 200px;
+    border:solid 1px black;
+}
+
+/* tit- proyectos */
+.con-proyectos h3{
+    font-size: 20px;
+    Color: black;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    margin-right: 50px;
+}
+
+/* Contacto */
+
+/* titulo de contacto */
+
+.present-contacto{
+    display: inline-block
+
+}
+
+.tit-contacto{
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 30px;
+    margin-top:-200px;
+    
+    
+
+}
+.present-contacto .globo img{
+    width: 400px;
+    height: 300px;
+    margin-top: -250px;
+    margin-left: 100px;
+}
+
+.present-contacto img{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    margin-left: 50px;
+    margin-top:100px;
+}
+
+/* contenedor de instagram y contacto */
+.cont-form-mapa{
+    display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr;
+
+
+}
+/* mapa */
+
+.cont-form-mapa iframe{
+    border:solid black 2px;
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 10px;
+  
+}
+
+/* label */
+.formulario{
+    font-size: 20px;
+    color:crimson;
+    font-weight: 400;
+    display: block;
+    padding-top: 20px;
+    margin-left: 50px;
+    
+   
+}
+
+/* consulta */
+.consulta{
+    display: block;
+    padding-top: 30px;
+    margin-left: 50px;
+    width: 6oopx;
+    height: 100px;
+}
+/* imput */
+.formulario2{
+    display: block;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+/* contendor del formulario */
+#contact-form{
+    margin-left: 50px;
+    border: solid black 2px;
+    width: 80%;
+    height: 500px;
+    margin-top: 30px;
+}
+
+/* boton de enviar */
+.enviar{
+    display: block;
+    margin: 50px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    background-color: crimson;
+    border-radius: 30px;
+}}
