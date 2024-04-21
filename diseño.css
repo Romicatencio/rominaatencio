@@ -449,7 +449,21 @@ footer h2{
 .texto-cookies{
     font-size: 20px;
     color:#000;
-}}
+}
+/* texto de agradecimiento-correo */
+
+.gracias{
+    font-size: 25px;
+    color: black;
+    background-color: rgb(240, 155, 172);
+    border-radius: 35px;
+    width: 600px;
+    height: auto;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 400px;
+}
+}
 
 /* mobile */
 @media screen and (max-width: 480px) {
@@ -872,4 +886,20 @@ footer h2{
     font-weight: 400;
     background-color: crimson;
     border-radius: 30px;
-}}
+}
+
+/* texto de agradecimiento-correo */
+
+.gracias{
+    font-size: 15px;
+    color: black;
+    background-color: rgb(240, 155, 172);
+    border-radius: 35px;
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+}
