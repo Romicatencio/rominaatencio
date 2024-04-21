@@ -316,10 +316,10 @@ footer h2{
 /* consulta */
 .consulta{
     display: inline-block;
-    padding: 70px;
+    padding: 20px;
     margin-left: 50px;
-    width: 8oopx;
-    height: 100px;
+    width: 400px;
+    height: 200px;
     font-size: 25px;
 }
 /* imput */
@@ -350,6 +350,7 @@ footer h2{
     font-weight: 400;
     background-color: crimson;
     border-radius: 30px;
+    margin-top: 5px;
 }
 
 
@@ -859,8 +860,8 @@ footer h2{
     display: block;
     padding-top: 30px;
     margin-left: 50px;
-    width: 6oopx;
-    height: 100px;
+    width: 200px;
+    height: 150px;
 }
 /* imput */
 .formulario2{
