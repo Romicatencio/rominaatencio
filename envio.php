@@ -14,7 +14,7 @@ $message = trim($_POST["message"]);
     
  
 // Asegúrate de cambiar esta dirección de correo electrónico al destinatario deseado
-    $recipient = "romiatencio@gmail.com";
+    $recipient = "romicatencio@gmail.com";
     
     
     
