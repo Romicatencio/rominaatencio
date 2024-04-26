@@ -638,14 +638,14 @@ footer h2{
 /* politica de privacidad */
 
 .tit-politica{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     padding: 10px;
     color: #000;
 }
 
 .texto-politica{
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px;
     color:#000;
 }
@@ -655,7 +655,7 @@ footer h2{
 /* enlace para regresar a index */
 
 .regresar{
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     border-radius: 40px;
     background-color: #000;
@@ -664,13 +664,13 @@ footer h2{
 }
 
 .tit-cookies{
-    font-size: 30px;
+    font-size: 20px;
     color: #000;
     text-align: center;
 }
 
 .tit2-cookies{
-    font-size: 25px;
+    font-size: 15px;
     color:#000;}
 
 .texto-cookies{
