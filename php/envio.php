@@ -1,8 +1,5 @@
 
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener datos del formulario
@@ -27,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Envía el correo
     if (mail($recipient, $subject, $email_content, $email_headers)) {
         // Redireccionar al usuario a una página de agradecimiento después de enviar el formulario
-        header("Location: gracias.html");
+        header("Location: ../gracias.html"); 
         exit;
     } else {
         // Si falla el envío del correo, mostrar un mensaje de error
@@ -35,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Si no es una solicitud POST, redirigir al usuario a la página de inicio
-    header("Location: index.html");
+    header("Location: ../index.html");
     exit;
 }
 ?>
