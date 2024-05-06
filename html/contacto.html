@@ -46,20 +46,21 @@
 
 <div class="cont-form-mapa">
 
-    <form id="contact-form" action="../php/envio.php" method="POST">
-      <label class="formulario" for="name">Nombre:</label>
-      <input class="formulario2"  type="text" id="name" name="name" required>
-      
-      <label class="formulario" for="email">Correo Electrónico:</label>
-      <input class="formulario2" type="email" id="email" name="email" required>
-      
-      <label class="formulario" for="message">Consulta:</label>
-      <textarea class="consulta" id="message" name="message" rows="5" required></textarea>
-      
-      <button class="enviar" type="submit">Enviar</button>
-  </form>
+  <form id="contact-form" action="" method="POST">
+    <label class="formulario" for="name">Nombre:</label>
+    <input class="formulario2"  type="text" id="name" name="name" required>
+    
+    <label class="formulario" for="email">Correo Electrónico:</label>
+    <input class="formulario2" type="email" id="email" name="email" required>
+    
+    <label class="formulario" for="message">Consulta:</label>
+    <textarea class="consulta" id="message" name="message" rows="5" required></textarea>
+    
+    <button class="enviar" type="button" onclick="enviarFormulario()">Enviar</button>
+</form>
 
-    <script src="../js/contacto.js"></script>
+
+    <script src="/js/contacto.js"></script>
     <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.6625798225186!2d-58.47227492503234!3d-34.814429972879466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd164623a1cef%3A0x5e36819787101cc2!2sMonte%20Grande!5e0!3m2!1ses!2sar!4v1712948343533!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>

@@ -1,22 +1,20 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var message = document.getElementById('message').value.trim();
-
-    if (name === '' || email === '' || message === '') {
-        alert('Por favor, complete todos los campos del formulario.');
-        return;
-    }
-
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('');
-        return;
-    }
-
-    // Si pasa la validación, envía el formulario
-    this.submit();
-});
+function enviarFormulario() {
+    var formData = new FormData(document.getElementById('contact-form'));
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'tu_archivo_php_para_procesar_el_formulario.php', true);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            console.log('Formulario enviado correctamente');
+            // Aquí puedes realizar acciones adicionales después de enviar el formulario, como mostrar un mensaje de éxito o redireccionar a otra página
+        } else {
+            console.error('Error al enviar el formulario');
+            // Aquí puedes manejar el error, como mostrar un mensaje de error al usuario
+        }
+    };
+    xhr.onerror = function() {
+        console.error('Error de red al enviar el formulario');
+        // Aquí puedes manejar errores de red, como mostrar un mensaje de error al usuario
+    };
+    xhr.send(formData);
+}
     
