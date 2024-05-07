@@ -1,7 +1,7 @@
 function enviarFormulario() {
     var formData = new FormData(document.getElementById('contact-form'));
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'tu_archivo_php_para_procesar_el_formulario.php', true);
+    xhr.open('POST', 'contacto.php', true);
     xhr.onload = function() {
         if (xhr.status === 200) {
             console.log('Formulario enviado correctamente');
