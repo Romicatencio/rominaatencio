@@ -46,7 +46,7 @@
 
 <div class="cont-form-mapa">
 
-  <form id="contact-form" action="../contacto.php" method="POST">
+  <form id="contact-form" method="POST">
     <label class="formulario" for="name">Nombre:</label>
     <input class="formulario2" type="text" id="name" name="name" required>
     
@@ -56,7 +56,7 @@
     <label class="formulario" for="message">Consulta:</label>
     <textarea class="consulta" id="message" name="message" rows="5" required></textarea>
     
-    <button class="enviar" type="submit">Enviar</button>
+    <button class="enviar" type="button" onclick="enviarFormulario()">Enviar</button>
 </form>
 
     <script src="/js/contacto.js"></script>

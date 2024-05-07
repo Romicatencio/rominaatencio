@@ -4,16 +4,22 @@ function enviarFormulario() {
     xhr.open('POST', '../contacto.php', true);
     xhr.onload = function() {
         if (xhr.status === 200) {
-            console.log('../gracias.html');
-            // Aquí puedes realizar acciones adicionales después de enviar el formulario, como mostrar un mensaje de éxito o redireccionar a otra página
+            // Verificar la respuesta del servidor
+            if (xhr.responseText === 'OK') {
+                console.log('Formulario enviado correctamente');
+                window.location.href = "../gracias.html"; // Redireccionar a la página de agradecimiento
+            } else {
+                console.error('Error al enviar el formulario');
+                // Manejar el error, mostrar un mensaje de error al usuario, etc.
+            }
         } else {
             console.error('Error al enviar el formulario');
-            // Aquí puedes manejar el error, como mostrar un mensaje de error al usuario
+            // Manejar el error, mostrar un mensaje de error al usuario, etc.
         }
     };
     xhr.onerror = function() {
         console.error('Error de red al enviar el formulario');
-        // Aquí puedes manejar errores de red, como mostrar un mensaje de error al usuario
+        // Manejar errores de red, mostrar un mensaje de error al usuario, etc.
     };
     xhr.send(formData);
 }
