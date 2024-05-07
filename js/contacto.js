@@ -1,3 +1,4 @@
+
 function enviarFormulario() {
     var formData = new FormData(document.getElementById('contact-form'));
     var xhr = new XMLHttpRequest();
@@ -23,4 +24,15 @@ function enviarFormulario() {
     };
     xhr.send(formData);
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contact-form");
+    const enviarButton = form.querySelector(".enviar");
+
+    enviarButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Evitar que se envíe el formulario por defecto
+        enviarFormulario(); // Llamar a la función enviarFormulario()
+    });
+});
     
