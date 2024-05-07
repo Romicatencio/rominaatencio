@@ -1,5 +1,6 @@
 <?php
-error_reporting(E_ALL); ini_set('display_errors', 1);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener datos del formulario
@@ -21,20 +22,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Construye las cabeceras del correo
     $email_headers = "From: $name <$email>";
 
-    
     // Envía el correo
     if (mail($recipient, $subject, $email_content, $email_headers)) {
-        // Redireccionar al usuario a una página de agradecimiento después de enviar el formulario
-        header("Location:../html/gracias.html"); 
-        exit;
+        // Envío exitoso
+        echo "OK"; // Esto se enviará como respuesta al AJAX
     } else {
-        // Si falla el envío del correo, mostrar un mensaje de error
-        echo "Oops! Algo salió mal y no pudimos enviar tu mensaje.";
+        // Error en el envío
+        echo "Error"; // Esto se enviará como respuesta al AJAX
     }
 } else {
-    // Si no es una solicitud POST, redirigir al usuario a la página de inicio
-    header("Location: ../index.html");
-    exit;
+    // No es una solicitud POST válida
+    echo "Error"; // Esto se enviará como respuesta al AJAX
 }
 ?>
 
