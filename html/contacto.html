@@ -61,36 +61,7 @@
 
     <script src="/js/contacto.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const form = document.getElementById("contact-form");
-      
-        form.addEventListener("submit", function(event) {
-          event.preventDefault(); // Evitar que se envíe el formulario por defecto
-      
-          // Obtener los datos del formulario
-          const formData = new FormData(form);
-      
-          // Enviar los datos del formulario usando Fetch API
-          fetch(form.action, {
-            method: form.method,
-            body: formData
-          })
-          .then(response => {
-            if (response.ok) {
-              // Si la respuesta es exitosa, redireccionar o mostrar un mensaje de éxito
-              window.location.href = "gracias.html"; // Redireccionar a la página de agradecimiento
-            } else {
-              // Si hay un error, mostrar un mensaje de error
-              console.error("Error al enviar el formulario");
-            }
-          })
-          .catch(error => {
-            console.error("Error al enviar el formulario:", error);
-          });
-        });
-      });
-      </script>
+    
     <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.6625798225186!2d-58.47227492503234!3d-34.814429972879466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd164623a1cef%3A0x5e36819787101cc2!2sMonte%20Grande!5e0!3m2!1ses!2sar!4v1712948343533!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
