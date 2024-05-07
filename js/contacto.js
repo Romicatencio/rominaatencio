@@ -2,7 +2,7 @@
 function enviarFormulario() {
     var formData = new FormData(document.getElementById('contact-form'));
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', '../contacto.php', true);
+    xhr.open('POST', 'contacto.php', true);
     xhr.onload = function() {
         if (xhr.status === 200) {
             // Verificar la respuesta del servidor
@@ -25,7 +25,6 @@ function enviarFormulario() {
     xhr.send(formData);
 }
 
-
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("contact-form");
     const enviarButton = form.querySelector(".enviar");
@@ -35,4 +34,3 @@ document.addEventListener("DOMContentLoaded", function() {
         enviarFormulario(); // Llamar a la función enviarFormulario()
     });
 });
-    
