@@ -1,14 +1,18 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 
+
+   
+      font-family: "Josefin Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: weight;
+      font-style: normal;
     
-        font-family: "Shadows Into Light", cursive;
-        font-weight: 400;
-        font-style: normal;
       
-      .hubballi-regular {
+          
+    .hubballi-regular {
         font-family: "Hubballi", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -18,9 +22,37 @@
         font-weight: 400;
         font-style: normal;
       }
+
+      .cookie-regular {
+        font-family: "Cookie", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      
+
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+            
+      
+  }
+      
+       
+          
+          
+          
+   
+
+     
+      
             
     
-}
+
 
 @media screen and (min-width:769px){
 /* menu */
@@ -52,7 +84,7 @@
 .presentacion h1{
    position:absolute ;
    top: 200px;
-   margin-left: 400px;;
+   margin-left: 300px;;
    font-size: 130px;
    color:white;
    font-weight: 800;
@@ -82,7 +114,8 @@
 .present-foto img{
     width: 300px;
     height: auto;
-    border: solid 3px black
+    border: solid 3px black;
+    margin-top: 30px;
 }
 
 .pres-texto{
@@ -147,8 +180,7 @@ footer h2{
     font-size: 35px;
      text-align: center;
      display: inline-block;
-     background-color: black;
-     color: white;
+     color:crimson;
      margin-left: 500px;
      padding: 10px;
 }
@@ -163,195 +195,102 @@ footer h2{
     font-weight: 400;
     margin-left: 30px;
     margin-right: 30px;
+    background-color: rgb(255, 203, 186);
 }
+
+
 
 /* contenedor de los procesos */
-.proceso{
-    display: grid;
-    grid-template-columns: 1fr 1fr  ;
-    grid-template-rows:  1fr 1fr;
-    gap: 5px;
-    border: solid 2px black;
-    margin:30px;
-    
-}
-/* titulo de proceso */
-.proceso h3{
-    font-size: 30px;
-    color:black;
-    background-color:rgb(240, 155, 172);
-    text-align: center;
+
+.desarrollo1{
+    width: 600px;
+    height: auto;
     padding: 10px;
-   
+    margin-left: 30px;
 }
-/* explicación de procesos */
-.proceso p{
-    font-size: 20px;
-    color: black;
-    text-align: center;
-   
+.desarrollo1 img{
+    width: 100px;
+    height: 100px;
     
 }
 
-/* explicacion entrega final */
-.entrega{
-    border: solid 2px black;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: -30px;
-}
-.entrega h3{
-    
-    font-size: 30px;
-    color: black;
-    background-color:rgb(240, 155, 172);
+.desarrollo1 h3{
+    font-size: 23px;
+    color:crimson;
+   
     text-align: center;
-   padding: 10px;
 }
-.entrega p{
+
+.desarrollo1 p{
     font-size: 20px;
     color: black;
+    margin-left: 50px;}
+
+
+.desarrollo2{
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    margin-left: 600px;
+}
+
+.desarrollo2 img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.desarrollo2 h3{
+    font-size: 23px;
+    color:crimson;
+   
     text-align: center;
 }
+
+.desarrollo2 p{
+    font-size: 20px;
+    color: black;
+    margin-left: 50px;}
+
+/* titulo de los proyectos */
 .titulo-proyectos{
-    font-size: 40px;
+    font-size: 35px;
     color: black;
     text-align: center;
     padding: 20px;
     font-weight: 400;
+    margin-top: 50px;
 }
 
-/* contenedor de las img-proy */
+/* contenedor de las img-proy */                                 
 
 .con-proyectos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr;
     padding: 20px;
     padding-bottom: 40px;
+    background-color:  rgb(250, 225, 216) ;
+    margin-bottom: 20px;
 }
 /* img de los proyectos */
 .con-proyectos img{
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 160px;
     border:solid 1px black;
 }
 
 /* tit- proyectos */
 .con-proyectos h3{
-    font-size: 25px;
+    font-size: 20px;
     Color: black;
     font-weight: 600;
     text-align: center;
     padding: 15px;
 }
 
-/* Contacto */
-
-/* titulo de contacto */
-
-.present-contacto{
-    display: inline-block
-
-}
-
-.tit-contacto{
-    font-size: 20px;
-    color: black;
-    text-align: center;
-    margin-left: 370px;
-    margin-right: 370px;
-    margin-top:-230px;
-    
-    
-
-}
-.present-contacto .globo img{
-    width: 700px;
-    height: 350px;
-    margin-top: -340px;
-    margin-left: 320px;
-}
-
-.present-contacto img{
-    width: 150px;
-    height: 150px;
-    border-radius: 60px;
-    margin-left: 200px;
-    margin-top:100px;
-}
-
-/* contenedor de instagram y contacto */
-.cont-form-mapa{
-    display: flex;
-    justify-content:space-between ;
-    align-items: center;
-    padding: 10px;
-    margin: 20px;
-    padding-bottom: 80px;;
 
 
-}
-/* mapa */
-
-.cont-form-mapa iframe{
-    border:solid black 2px;
-    width: 600px;
-    height: 600px;
-    display: flex;
-}
-
-/* label */
-.formulario{
-    font-size: 25px;
-    color:crimson;
-    font-weight: 400;
-    display: block;
-    padding-top: 40px;
-    margin-left: 50px;
-    
-   
-}
-
-/* consulta */
-.consulta{
-    display: inline-block;
-    padding: 20px;
-    margin-left: 50px;
-    width: 400px;
-    height: 200px;
-    font-size: 25px;
-}
-/* imput */
-.formulario2{
-    display: block;
-    padding-top: 10px;
-    margin-left: 50px;
-}
-
-
-/* contendor del formulario */
-#contact-form{
-    margin-left: 30px;
-    border: solid black 2px;
-    width: 40%;
-    height: 600px;
-}
-
-/* boton de enviar */
-.enviar{
-    display: block;
-    margin: 50px;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 25px;
-    color: black;
-    font-weight: 400;
-    background-color: crimson;
-    border-radius: 30px;
-    margin-top: 5px;
-}
 
 
 /* cookies */
@@ -454,19 +393,23 @@ footer h2{
     font-size: 20px;
     color:#000;
 }
-/* texto de agradecimiento-correo */
 
-.gracias{
-    font-size: 25px;
-    color: black;
-    background-color: rgb(240, 155, 172);
-    border-radius: 35px;
-    width: 600px;
+/* correo */
+
+.correo img{
+    width: 80px;
     height: auto;
-    padding: 20px;
-    margin-top: 40px;
-    margin-left: 400px;
+    border-radius: 40px;
 }
+
+.correo{
+    position: fixed;
+    bottom: 120px;
+    left: 30px;
+    z-index: 1000;
+}
+
+
 }
 
 /* mobile */
@@ -575,6 +518,23 @@ footer h2{
     width: 60px;
     height: auto;
 }
+
+/* correo */
+
+.correo img{
+    width: 40px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.correo{
+    position: fixed;
+    bottom: 100px;
+    left: 30px;
+    z-index: 1000;
+}
+
+
 
 /* cookies */
 .aviso-cookies {
@@ -687,8 +647,7 @@ footer h2{
     font-size: 25px;
      text-align: center;
      display: inline-block;
-     background-color: black;
-     color: white;
+    color:crimson;
      margin-left: 100px;
      padding: 10px;
 }
@@ -703,56 +662,65 @@ footer h2{
     font-weight: 400;
     margin-left: 30px;
     margin-right: 30px;
+    background-color: rgb(255, 203, 186);
 }
 
 /* contenedor de los procesos */
-.proceso{
-    display: grid;
-    grid-template-columns: 1fr   ;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 3px;
-    border: solid 2px black;
-    margin:10px;
-    
-}
-/* titulo de proceso */
-.proceso h3{
-    font-size: 20px;
-    color:black;
-    background-color:rgb(240, 155, 172);
-    text-align: center;
+
+.desarrollo1{
+    width: 350px;
+    height: auto;
     padding: 10px;
-   
+    margin-left: 30px;
 }
-/* explicación de procesos */
-.proceso p{
-    font-size: 15px;
-    color: black;
-    text-align: center;
-   
+.desarrollo1 img{
+    width: 50px;
+    height: 50px;
     
 }
 
-/* explicacion entrega final */
-.entrega{
-    border: solid 2px black;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: -20px;
-}
-.entrega h3{
-    
-    font-size: 20px;
-    color:black;
-    background-color:rgb(240, 155, 172);
+.desarrollo1 h3{
+    font-size: 18px;
+    color:crimson;
+   
     text-align: center;
-    padding: 10px;
 }
-.entrega p{
+
+.desarrollo1 p{
     font-size: 15px;
     color: black;
+    margin-left: 50px;}
+
+
+.desarrollo2{
+    width: 350px;
+    height: auto;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.desarrollo2 img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.desarrollo2 h3{
+    font-size: 18px;
+    color:crimson;
+   
     text-align: center;
 }
+
+.desarrollo2 p{
+    font-size: 15px;
+    color: black;
+    margin-left: 50px;}
+
+
+
+/* titulo de los proyectos */
+
 .titulo-proyectos{
     font-size: 25px;
     color: black;
@@ -765,146 +733,31 @@ footer h2{
 
 .con-proyectos{
     display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
     padding: 20px;
     padding-bottom: 40px;
-    margin-left: 30px;
+    margin-left: 10px;
+    background-color:  rgb(245, 204, 189) ;
 }
 /* img de los proyectos */
 .con-proyectos img{
-    width: 330px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     border:solid 1px black;
 }
 
 /* tit- proyectos */
 .con-proyectos h3{
-    font-size: 20px;
+    font-size: 15px;
     Color: black;
     font-weight: 600;
     text-align: center;
     padding: 15px;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
-/* Contacto */
 
-/* titulo de contacto */
-
-.present-contacto{
-    display: inline-block
-
-}
-
-.tit-contacto{
-    font-size: 13px;
-    color: black;
-    text-align: center;
-    margin-left:70px;
-    margin-right: 30px;
-    margin-top:-180px;
-    
-    
-
-}
-.present-contacto .globo img{
-    width: 400px;
-    height: 280px;
-    margin-top: -250px;
-    margin-left: 30px;
-}
-
-.present-contacto img{
-    width: 70px;
-    height: 70px;
-    border-radius: 70px;
-    margin-left: 20px;
-    margin-top:100px;
-}
-
-/* contenedor de instagram y contacto */
-.cont-form-mapa{
-    display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: 1fr 1fr;
-
-
-}
-/* mapa */
-
-.cont-form-mapa iframe{
-    border:solid black 2px;
-    width: 350px;
-    height: 350px;
-    margin-left: 30px;
-    margin-top: 10px;
-  
-}
-
-/* label */
-.formulario{
-    font-size: 20px;
-    color:crimson;
-    font-weight: 400;
-    display: block;
-    padding-top: 20px;
-    margin-left: 50px;
-   
-    
-   
-}
-
-/* consulta */
-.consulta{
-    display: block;
-    padding-top: 30px;
-    margin-left: 50px;
-    width: 200px;
-    height: 150px;
-}
-/* imput */
-.formulario2{
-    display: block;
-    padding-top: 10px;
-    margin-left: 50px;
-}
-/* contenedor del formulario */
-#contact-form{
-    margin-left: 30px;
-    border: solid black 2px;
-    width: 350px;
-    height: 500px;
-    margin-top: 30px;
-}
-
-/* boton de enviar */
-.enviar{
-    display: block;
-    margin: 50px;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 20px;
-    color: black;
-    font-weight: 400;
-    background-color: crimson;
-    border-radius: 30px;
-}
-
-/* texto de agradecimiento-correo */
-
-.gracias{
-    font-size: 15px;
-    color: black;
-    background-color: rgb(240, 155, 172);
-    border-radius: 35px;
-    width: 400px;
-    height: auto;
-    padding: 20px;
-    margin-top: 40px;
-    margin-left: 30px;
-}
 
 }
 
@@ -941,7 +794,7 @@ footer h2{
 .presentacion h1{
    position:absolute ;
    top: 90px;
-   margin-left: 150px;;
+   margin-left: 180px;;
    font-size: 60px;
    color:white;
    font-weight: 800;
@@ -1032,6 +885,23 @@ footer h2{
     width: 80px;
     height: auto;
 }
+
+/* correo */
+
+.correo img{
+    width: 60px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.correo{
+    position: fixed;
+    bottom: 120px;
+    left: 30px;
+    z-index: 1000;
+}
+
+
 
 /* cookies */
 .aviso-cookies {
@@ -1143,8 +1013,7 @@ footer h2{
     font-size: 25px;
      text-align: center;
      display: inline-block;
-     background-color: black;
-     color: white;
+     color: crimson;
      margin-left: 160px;
      padding: 10px;
 }
@@ -1159,195 +1028,103 @@ footer h2{
     font-weight: 400;
     margin-left: 30px;
     margin-right: 30px;
+    background-color: rgb(255, 203, 186);
 }
 
 /* contenedor de los procesos */
-.proceso{
-    display: grid;
-    grid-template-columns: 1fr  ;
-    grid-template-rows:  1fr 1fr 1fr;
-    gap: 5px;
-    border: solid 2px black;
-    margin:30px;
-    
-}
-/* titulo de proceso */
-.proceso h3{
-    font-size: 25px;
-    color:black;
-    background-color:rgb(240, 155, 172);
-    text-align: center;
+
+.desarrollo1{
+    width: 600px;
+    height: auto;
     padding: 10px;
-   
+    margin-left: 20px;
 }
-/* explicación de procesos */
-.proceso p{
-    font-size: 15px;
-    color: black;
-    text-align: center;
-   
+.desarrollo1 img{
+    width: 80px;
+    height: 80px;
     
 }
 
-/* explicacion entrega final */
-.entrega{
-    border: solid 2px black;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: -32px;
+.desarrollo1 h3{
+    font-size: 20px;
+    color:crimson;
+   
+    text-align: center;
 }
-.entrega h3{
+
+.desarrollo1 p{
+    font-size: 18px;
+    color: black;
+    margin-left: 50px;}
+
+
+.desarrollo2{
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.desarrollo2 img{
+    width: 80px;
+    height: 80px;
     
-    font-size: 25px;
-    color: black;
-    background-color:rgb(240, 155, 172);
-    text-align: center;
-   padding: 10px;
 }
-.entrega p{
-    font-size: 15px;
-    color: black;
+
+.desarrollo2 h3{
+    font-size: 20px;
+    color:crimson;
+   
     text-align: center;
 }
+
+.desarrollo2 p{
+    font-size: 18px;
+    color: black;
+    margin-left: 50px;}
+
+/* titulo de los proyectos */
 .titulo-proyectos{
-    font-size: 30px;
+    font-size: 35px;
     color: black;
     text-align: center;
     padding: 20px;
     font-weight: 400;
+    margin-top: 50px;
 }
 
-/* contenedor de las img-proy */
+/* contenedor de las img-proy */                                 
 
 .con-proyectos{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr  1fr ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
     padding: 20px;
     padding-bottom: 40px;
+    background-color:  rgb(250, 225, 216) ;
+    margin-bottom: 20px;
 }
 /* img de los proyectos */
 .con-proyectos img{
-    width: 400px;
-    height: 250px;
+    width: 280px;
+    height: 180px;
     border:solid 1px black;
-    margin-left: 50px;
+    margin-top: 10px;
 }
 
 /* tit- proyectos */
 .con-proyectos h3{
-    font-size: 25px;
+    font-size: 20px;
     Color: black;
     font-weight: 600;
     text-align: center;
     padding: 15px;
+    margin-right: 50px;
 }
 
-/* Contacto */
-
-/* titulo de contacto */
-
-.present-contacto{
-    display: inline-block;
-
-}
-
-.tit-contacto{
-    font-size: 15px;
-    color: black;
-    text-align: center;
-    margin-left: 160px;
-    margin-right: 70px;
-    margin-top:-200px;
-    
-    
-
-}
-.present-contacto .globo img{
-    width: 500px;
-    height: 300px;
-    margin-top: -260px;
-    margin-left: 120px;
-}
-
-.present-contacto img{
-    width: 80px;
-    height: 80px;
-    border-radius: 60px;
-    margin-left: 50px;
-    margin-top:100px;
-}
-
-/* contenedor de instagram y contacto */
-.cont-form-mapa{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 15px;
-    margin: 10px;
-   
 
 
-}
-/* mapa */
 
-.cont-form-mapa iframe{
-    border:solid black 2px;
-    width: 500px;
-    height: 500px;
-    margin-left: 20px;
-}
-
-/* label */
-.formulario{
-    font-size: 25px;
-    color:crimson;
-    font-weight: 400;
-    display: block;
-    padding-top: 40px;
-    margin-left: 50px;
-    
-   
-}
-
-/* consulta */
-.consulta{
-    display: inline-block;
-    padding: 20px;
-    margin-left: 50px;
-    width: 330px;
-    height: 160px;
-    font-size: 25px;
-}
-/* imput */
-.formulario2{
-    display: block;
-    padding-top: 10px;
-    margin-left: 50px;
-}
-/* contendor del formulario */
-#contact-form{
-    margin-left: 30px;
-    border: solid black 2px;
-    width: 500px;
-    height: 550px;
-}
-
-/* boton de enviar */
-.enviar{
-    display: block;
-    margin: 50px;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 25px;
-    color: black;
-    font-weight: 400;
-    background-color: crimson;
-    border-radius: 30px;
-    margin-top: 5px;
-    margin-left: 150px;
-}
 
 
 }
